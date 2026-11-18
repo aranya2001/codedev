@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeDev - Programming</title>
+    <link rel="stylesheet" href="css/prog_style.css" />
+</head>
+<body onload="showIDE()">
+
+    <div class="header">
+        <a href="index.html">
+            <img src="images/home.png" alt="home">
+        </a>
+        <center>
+            <h1 id="headline">CodeDev</h1>
+            <br>
+            <p id="caption">Let's build a program</p>
+        </center>
+        <button id="switch_web" onclick="window.location.href='web.html'">SWITCH TO WEB DEVELOPMENT</button>
+    </div>
+    <div class="control-panel">
+        Select Language:
+        &nbsp; &nbsp;
+        <select id="languages" onchange="showIDE()">
+            <option value="python"> Python </option>
+            <option value="java"> Java </option>
+            <option value="r"> R </option>
+        </select>
+    </div>
+
+    <div id="editor"></div>
+
+
+    <script src="js/prog_script.js"></script>
+</body>
+</html>

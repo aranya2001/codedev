@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev - Web Development</title>
+    <link rel="stylesheet" href="css/web_style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <a href="index.html">
+                <img src="images/home.png" alt="home">
+            </a>
+            <center>
+                <h1 id="headline">CodeDev</h1>
+                <br>
+                <p id="caption">Let's build a web page</p>
+            </center>
+            <button id="switch_prog" onclick="window.location.href='prog.html'">SWITCH TO PROGRAMMING</button>
+        </div>
+        <div class="editor">
+            <div class="left">
+                <label><img src="images/html.png">HTML</label>
+                <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+                <label><img src="images/css.png">CSS</label>
+                <textarea onkeyup="run()" spellcheck="false" id="css-code"></textarea>
+                <label><img src="images/javascript.png">JavaScript</label>
+                <textarea onkeyup="run()" spellcheck="false" id="js-code"></textarea>
+            </div>
+            <div class="right">
+                <label><img src="images/output.png">Output</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="js/web_script.js"></script>
+</body>
+</html>
